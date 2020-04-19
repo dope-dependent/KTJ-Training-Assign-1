@@ -1,0 +1,48 @@
+.footer{
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba($standard-black,0.9);
+    padding:5rem 10rem;
+    margin-top: 3rem;
+    position: relative;
+    height: 50vh;
+    &__left{
+        position: absolute;
+        left:0;
+        top:0;
+        width:50%;
+        height: 100%;
+        padding-right:5rem;
+        text-align: center;
+        & img{
+            padding-top: 2rem;
+            display: inline-block;
+            width: 25rem;
+        }
+        &--text{
+            display: block;
+            font-size: 1.6rem;
+            color:$standard-yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top:2rem;
+        }
+    }
+    &__headings{
+        font-weight: bold;
+        display: block;
+        font-size:1.7rem;
+        text-transform: uppercase;
+        color:$standard-white;
+        padding-top:3rem;
+
+    }
+    &__right{
+        position: absolute;
+        top:0%;
+        right:0%;
+        width:50%;
+        height:100%;
+        padding-left: 5rem;
+        text-align: center;
+    }   
+}

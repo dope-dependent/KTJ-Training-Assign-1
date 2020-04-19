@@ -1,0 +1,32 @@
+.reviews{
+    padding:2rem;
+    height: 125rem;
+    background-image: linear-gradient(to bottom,$standard-yellow,$standard-white);
+}
+
+@media only screen and (max-width:625px){
+    .reviews .heading-usual{
+        font-size: 5rem;
+    }
+    .reviews .new-row__row1{
+        [class$="--text"]{
+            .sub-heading-usual{
+                font-size: 1.8rem;
+            }
+            .standard-text{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .reviews .new-row__row2{
+        [class$="--text"]{
+            .sub-heading-usual{
+                font-size: 1.8rem;
+            }
+            .standard-text{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+}

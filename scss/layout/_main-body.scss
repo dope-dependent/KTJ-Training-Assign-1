@@ -1,0 +1,63 @@
+.imp{
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    box-shadow:0rem -3rem 4rem rgba($standard-yellow,1);
+    background-color:rgba($standard-yellow,1);
+    height: 85rem;
+    font-weight: 900;
+    padding:4rem;
+}
+
+@media only screen and (max-width:900px){
+    .imp{
+        height:105rem;
+        text-align:center;
+        & .row{
+            width: 95%;
+            display: inline-block;
+            @include clearfix;          
+            & [class^="col-"]{
+                width:100%;
+                margin-bottom:5rem;
+                & .heading--margin--bottom--small{
+                    & .sub-heading-usual{
+                        font-size: 2rem;
+                    }
+                    & .usual-text{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            & .col-60-of-100 .images{
+                &__general:hover{
+                    outline: ridge $maroonish 1rem;
+                    outline-offset: 0.7rem;
+                    transform: scale(1.2);
+                }
+                &:hover &__general:not(:hover){
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:560px){
+    .imp{
+        height: 85rem;
+    }
+    .imp .heading--margin--bottom--large .heading-usual-2{
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (max-width:505px){
+    .imp .heading--margin--bottom--large .heading-usual-2{
+        font-size: 4rem;
+    }
+    .imp .heading--margin--bottom--large{
+        margin-bottom: 3rem;
+    }
+}
+

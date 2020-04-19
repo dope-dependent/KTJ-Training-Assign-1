@@ -1,0 +1,41 @@
+.images{
+    position:relative;
+    &__general{
+        width:40%;
+        box-shadow: 0 1.5rem 3rem rgba($standard-black,.4);
+        border-radius: 2px;
+        position: absolute;
+        z-index:10;
+        outline-offset: 2rem;
+        transition: all 0.2s;
+        backface-visibility: hidden;
+        &--book{
+            right:10%;
+            top:15rem;
+        }
+        &--decor{
+            left:0%;
+            top:0rem;
+        }
+        &--laptop{
+            right: 0;
+            top:0rem;
+        }
+        &--clothes{
+            left:30%;
+            top:6rem;
+        }
+        &:hover{
+            transform: scale(1.1);
+            z-index: 11;
+            outline: ridge $maroonish 1.7rem;
+            outline-offset: 1.2rem;
+        }
+        
+    }
+    &:hover &__general:not(:hover){
+        filter: blur(2.5px);
+        transform: scale(0.95);
+    }
+    
+}
